@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <title>Metrowerks CodeWarrior releases</title>
 <style type="text/css">
+body {
+  background-color: rgba(223, 223, 223, 0.369)
+}
+
 table {
   border-collapse: collapse;
 }
@@ -16,7 +20,31 @@ tr > td:nth-child(5) {
   white-space: pre;
 }
 
-td {
+tr td:nth-child(even) {
+  background-color: #DEE6EF;
+}
+
+tr td:nth-child(odd) {
+  background-color: #B4C7DC;
+}
+
+.compilerRow td:nth-child(even) {
+  background-color: #F7D1D5;
+}
+
+.compilerRow td:nth-child(odd) {
+  background-color: #EC9BA4;
+}
+
+th:nth-child(even) {
+  background-color: #E0C2CD;
+}
+
+th:nth-child(odd) {
+  background-color: #BF819E;
+}
+
+td, th {
   border: 1px solid black;
   padding: 0.2em;
 }
@@ -35,7 +63,7 @@ td {
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccmips.exe</td>
 <td>MW MIPS C Compiler (2.3.1.01)</td>
@@ -79,7 +107,7 @@ Runtime Built: Dec  2 1999 14:06:02</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (2.4.1.01)</td>
@@ -152,7 +180,7 @@ Runtime Built: Nov 26 2001 10:52:33</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (2.4.1.01)</td>
@@ -225,7 +253,7 @@ Runtime Built: Jan 23 2002 19:54:36</td>
 <dd>--</dd>
 </dl>
 <table>
-<tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
+<tr class="compilerRow"><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
 <tr><td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (2.4.1.01)</td>
@@ -297,7 +325,7 @@ Runtime Built: Jul 16 2002 16:38:49</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (2.4.1.01)</td>
@@ -370,7 +398,7 @@ Runtime Built: Sep 26 2002 16:14:55</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (2.4.1.01)</td>
@@ -413,7 +441,7 @@ Runtime Built: Sep 26 2002 16:14:55</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -424,7 +452,7 @@ Runtime Built: Mar  7 2003 13:00:51</td>
 <td>No</td>
 <td>When choosing 3.0.0 optimization framework in installer</td>
 </tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -507,7 +535,7 @@ Runtime Built: Mar 25 2003 11:03:35</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -518,7 +546,7 @@ Runtime Built: May 27 2003 16:20:32</td>
 <td>No</td>
 <td>3.0.0 compiler install</td>
 </tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -591,7 +619,7 @@ Runtime Built: May 12 2003 12:51:54</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -602,7 +630,7 @@ Runtime Built: Jul 22 2003 15:32:04</td>
 <td>No</td>
 <td></td>
 </tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -685,7 +713,7 @@ Runtime Built: Aug 11 2003 11:43:50</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -718,7 +746,7 @@ Runtime Built: Sep 16 2003 16:26:17</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -729,7 +757,7 @@ Runtime Built: Dec  8 2003 16:40:07</td>
 <td>No</td>
 <td></td>
 </tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>--</td>
@@ -771,7 +799,7 @@ Runtime Built: Dec  8 2003 16:40:07</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -804,7 +832,7 @@ Runtime Built: Dec  8 2003 16:40:07</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -877,7 +905,7 @@ Runtime Built: Sep 14 2004 20:49:11</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -950,7 +978,7 @@ Runtime Built: May 28 2004 17:51:18</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
@@ -1087,7 +1115,7 @@ Runtime Built: Feb  2 2005 15:57:05</td>
 </dl>
 <table>
 <tr><th>Binary Type</th><th>File Name</th><th>Comment string</th><th><abbr title="cyclic redundancy check">CRC</abbr> 32</th><th>Output Version Info</th><th>File Location</th><th>Is On Decomp.me</th><th>Notes</th></tr>
-<tr>
+<tr class="compilerRow">
 <td><abbr title="executable">EXE</abbr></td>
 <td>mwccps2.exe</td>
 <td>MW MIPS C Compiler (3.0.0)</td>
